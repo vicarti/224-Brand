@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لا تكذب | Don't Lie ٢٢٤</title>
+    <!-- Bootstrap RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="https://theperfectpieceblogdotcom.wordpress.com/wp-content/uploads/2014/03/dont-lie-300x300.png" type="image/png">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand arabic" href="#">لا تكذب</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+</button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#collections">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item cart-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <!-- Cart Preview -->
+<div class="cart-preview">
+     <div class="cart-header">
+        <h5>Your Cart</h5>
+        <button class="cart-close-btn" aria-label="Close Cart">&times;</button>
+    </div>
+    <div class="cart-items"><!-- JS fills this --></div>
+
+    <div class="cart-total">
+        Total: <span class="total-amount">$0.00</span>
+    </div>
+
+    <a href="#" class="btn-view-cart" id="viewCartBtn">View Cart</a>
+
+    <!-- New "Buy Now" Button -->
+    <button id="buyNowBtn" class="btn btn-dark w-100 mt-3">Buy Now</button>
+</div>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="brand-name arabic animate__animated animate__fadeInDown">لا تكذب</h1>
+                <span class="brand-number arabic animate__animated animate__fadeIn delay-1">٢٢٤</span>
+                <p class="slogan animate__animated animate__fadeInUp delay-2">
+                    "Don't Lie" is simple, yet powerful.
+                </p>
+                <a href="#collections" class="btn btn-explore animate__animated animate__fadeInUp delay-3">Explore Collection</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section id="collections" class="products-section">
+        <div class="container py-5">
+            <h2 class="section-title text-center fade-in-up">Collections</h2>
+            
+            <div class="collection-nav fade-in-up delay-1">
+                <div class="collection-nav-item active" data-collection="all">All</div>
+                <div class="collection-nav-item" data-collection="t-shirts">T-Shirts</div>
+                <div class="collection-nav-item" data-collection="hoodies">Hoodies</div>
+                <div class="collection-nav-item" data-collection="pants">Pants</div>
+                <div class="collection-nav-item" data-collection="accessories">Accessories</div>
+            </div>
+            
+            <div class="row products-container">
+                <!-- T-Shirt 1 -->
+                <div class="col-md-6 col-lg-3 mb-4 product-item fade-in-up" data-collection="t-shirts">
+                    <div class="product-card">
+                        <img src="street/shirts/black.webp" class="product-img" alt="Classic Logo Tee">
+                        <div class="product-overlay">
+                            <h5 class="product-title">Classic Logo Tee</h5>
+                            <p class="product-price">$49.99</p>
+                            <button class="btn btn-sm btn-outline-light view-details" data-product="1">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- T-Shirt 2 -->
+                <div class="col-md-6 col-lg-3 mb-4 product-item fade-in-up delay-1" data-collection="t-shirts">
+                    <div class="product-card">
+                        <img src="street/shirts/white%20t%20shirt.webp" class="product-img" alt="Graphic Print Tee">
+                        <div class="product-overlay">
+                            <h5 class="product-title">Graphic Print Tee</h5>
+                            <p class="product-price">$59.99</p>
+                            <button class="btn btn-sm btn-outline-light view-details" data-product="2">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- T-Shirt 3 -->
+                <div class="col-md-6 col-lg-3 mb-4 product-item fade-in-up delay-2" data-collection="t-shirts">
+                    <div class="product-card">
+                        <img src="street/shirts/ydwtl-tee-shirt-s-black-redline-oversized-t-shirt-you-dont-want-this-life-uk-streetwear-brand-5451103076396_620x.webp" class="product-img" alt="Oversized Tee">
+                        <div class="product-overlay">
+                            <h5 class="product-title">Oversized Tee</h5>
+                            <p class="product-price">$54.99</p>
+                            <button class="btn btn-sm btn-outline-light view-details" data-product="3">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+              
+                
+                <!-- Hoodie 1 -->
+                <div class="col-md-6 col-lg-3 mb-4 product-item fade-in-up" data-collection="hoodies">
+                    <div class="product-card">
+                        <img src="street/hoodies/hoodies.jpg" class="product-img" alt="Classic Hoodie">
+                        <div class="product-overlay">
+                            <h5 class="product-title">Classic Hoodie</h5>
+                            <p class="product-price">$89.99</p>
+                            <button class="btn btn-sm btn-outline-light view-details" data-product="5">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hoodie 2 -->
+                <div class="col-md-6 col-lg-3 mb-4 product-item fade-in-up delay-1" data-collection="hoodies">
+                    <div class="product-card">
+                        <img src="street/hoodies/71aj0OahgeL._UY1000_.jpg" class="product-img" alt="Zip-Up Hoodie">
+                        <div class="product-overlay">
+                            <h5 class="product-title">Zip-Up Hoodie</h5>
+                            <p class="product-price">$99.99</p>
+                            <button class="btn btn-sm btn-outline-light view-details" data-product="6">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hoodie 3 -->
+                <div class="col-md-6 col-lg-3 mb-4 product-item fade-in-up delay-2" data-collection="hoodies">
+                    <div class="product-card">
+                        <img src="street/hoodies/hodievert.jpg" class="product-img" alt="Oversized Hoodie">
+                        <div class="product-overlay">
+                            <h5 class="product-title">Oversized Hoodie</h5>
+                            <p class="product-price">$94.99</p>
+                            <button class="btn btn-sm btn-outline-light view-details" data-product="7">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <!-- Pants 1 -->
+                <div class="col-md-6 col-lg-3 mb-4 product-item fade-in-up" data-collection="pants">
+                    <div class="product-card">
+                        <img src="street/pants/blackpants.webp" class="product-img" alt="Slim Fit Pants">
+                        <div class="product-overlay">
+                            <h5 class="product-title">Slim Fit Pants</h5>
+                            <p class="product-price">$79.99</p>
+                            <button class="btn btn-sm btn-outline-light view-details" data-product="9">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pants 2 -->
+                <div class="col-md-6 col-lg-3 mb-4 product-item fade-in-up delay-1" data-collection="pants">
+                    <div class="product-card">
+                        <img src="street/pants/jappanese.png" class="product-img" alt="Cargo Pants">
+                        <div class="product-overlay">
+                            <h5 class="product-title">Cargo Pants</h5>
+                            <p class="product-price">$89.99</p>
+                            <button class="btn btn-sm btn-outline-light view-details" data-product="10">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Pants 2 -->
+                <div class="col-md-6 col-lg-3 mb-4 product-item fade-in-up delay-1" data-collection="pants">
+                    <div class="product-card">
+                        <img src="street/pants/pant.jpg" class="product-img" alt="Cargo Pants">
+                        <div class="product-overlay">
+                            <h5 class="product-title">Cargo Pants</h5>
+                            <p class="product-price">$89.99</p>
+                            <button class="btn btn-sm btn-outline-light view-details" data-product="10">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Accessory 1 -->
+                <div class="col-md-6 col-lg-3 mb-4 product-item fade-in-up" data-collection="accessories">
+                    <div class="product-card">
+                        <img src="street/accesoires/Bague-Streetwear--Kyoto-Hono--Japanstreet-1623859247.webp" class="product-img" alt="Logo Cap">
+                        <div class="product-overlay">
+                            <h5 class="product-title">Logo Cap</h5>
+                            <p class="product-price">$39.99</p>
+                            <button class="btn btn-sm btn-outline-light view-details" data-product="11">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Accessory 2 -->
+                <div class="col-md-6 col-lg-3 mb-4 product-item fade-in-up delay-1" data-collection="accessories">
+                    <div class="product-card">
+                        <img src="street/accesoires/belt.webp" class="product-img" alt="Leather Belt">
+                        <div class="product-overlay">
+                            <h5 class="product-title">Leather Belt</h5>
+                            <p class="product-price">$49.99</p>
+                            <button class="btn btn-sm btn-outline-light view-details" data-product="12">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 product-item fade-in-up delay-1" data-collection="accessories">
+                    <div class="product-card">
+                        <img src="street/accesoires/jewer.webp" class="product-img" alt="Leather Belt">
+                        <div class="product-overlay">
+                            <h5 class="product-title">Leather Belt</h5>
+                            <p class="product-price">$49.99</p>
+                            <button class="btn btn-sm btn-outline-light view-details" data-product="12">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 fade-in-up">
+                    <h2 class="section-title" style="color: var(--pure-white);">About <span class="arabic">لا تكذب</span></h2>
+                    <p class="about-text">
+                        <span class="arabic">لا تكذب</span> (Don't Lie) is more than just a clothing brand - it's a movement. 
+                        Founded in 2024, we believe in authenticity, truth, and self-expression through fashion.
+                    </p>
+                    <p class="about-text">
+                        Our designs blend contemporary streetwear with cultural elements, creating pieces that speak 
+                        volumes without saying a word. Each garment is crafted with premium materials and attention 
+                        to detail that sets us apart.
+                    </p>
+                    <p class="about-text">
+                        The number <span class="arabic">٢٢٤</span> holds special significance to our brand, representing 
+                        the date when the vision for <span class="arabic">لا تكذب</span> was born.
+                    </p>
+                </div>
+                <div class="col-lg-6 fade-in-up delay-1">
+    <div class="col-lg-12 fade-in-up delay-1">
+  <div class="ratio ratio-16x9">
+    <video controls style="width: 100%; max-width: 800px;" poster="street/dontlie.jpg"> 
+      <source src="./street/Streetwear clothing brand commercial for www.deadbeat.in.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+</div>
+</div>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- Founders Section - Rectangular Dark Layout -->
+<section class="founders-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5 fade-in-up">THE ARCHITECTS</h2>
+        
+        <div class="row justify-content-center gx-md-5">
+            <!-- Founder 1 -->
+            <div class="col-lg-5 mb-5 mb-lg-0 fade-in-up">
+                <div class="founder-card">
+                    <div class="founder-img-container">
+                        <img src="./street/founders/uzi.jpg" alt="Founder 1" class="founder-img">
+                        <div class="img-overlay"></div>
+                    </div>
+                    <div class="founder-details">
+                        <h3 class="founder-name">CHAMSOU</h3>
+                        <p class="founder-title">CREATIVE DIRECTOR</p>
+                        <p class="founder-quote">
+                            "We don't design clothes - we design weapons for the mind."
+                        </p>
+                        <a href="#" class="ig-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Founder 2 -->
+            <div class="col-lg-5 fade-in-up delay-1">
+                <div class="founder-card">
+                    <div class="founder-img-container">
+                        <img src="./street/founders/malik.jpg" alt="Founder 2" class="founder-img">
+                        <div class="img-overlay"></div>
+                    </div>
+                    <div class="founder-details">
+                        <h3 class="founder-name">MALEK</h3>
+                        <p class="founder-title">OPERATIONS</p>
+                        <p class="founder-quote">
+                            "Silence is our logo. Darkness is our colorway."
+                        </p>
+                        <a href="#" class="ig-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0 fade-in-up">
+                    <h2 class="footer-brand arabic">لا تكذب</h2>
+                    <p class="footer-slogan">"Don't Lie" is a simple, yet powerful. <span class="arabic">٢٢٤</span></p>
+                    <div class="social-icons">
+                       
+                        <a href="https://www.instagram.com/224_.brand/" target="_blank" rel="noopener noreferrer">
+                                   <i class="fab fa-instagram"></i>
+                                                                     </a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0 fade-in-up delay-1">
+                    <div class="footer-links">
+                        <h5>Shop</h5>
+                        <ul>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Hoodies</a></li>
+                            <li><a href="#">Pants</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0 fade-in-up delay-2">
+                    <div class="footer-links">
+                        <h5>Help</h5>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Size Guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 fade-in-up delay-3">
+                    <div class="footer-links">
+                        <h5>Contact</h5>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Stores</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 fade-in-up delay-3">
+                    <div class="footer-links">
+                        <h5>Legal</h5>
+                        <ul>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Cookies</a></li>
+                            <li><a href="#">Copyright</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center copyright fade-in-up">
+                <p>&copy; 2023 <span class="arabic">لا تكذب</span> (Don't Lie). All rights reserved. <span class="arabic">٢٢٤</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Checkout Section -->
+<section id="checkoutSection" class="checkout-form-section" style="display: none;">
+    <div class="container py-5">
+        <h2 class="section-title text-center">Checkout</h2>
+        <form id="checkoutForm">
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" required>
+            </div>
+            <div class="mb-3">
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phoneNumber" required>
+            </div>
+            <div class="mb-3">
+                <label for="shippingAddress" class="form-label">Shipping Address</label>
+                <textarea class="form-control" id="shippingAddress" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger w-100">Submit Order</button>
+        </form>
+    </div>
+</section>
+
+
+    <!-- Product Modal -->
+    <div class="modal fade product-modal" id="productModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Product Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="" class="product-modal-img" alt="Product Image" id="modalProductImg">
+                        </div>
+                        <div class="col-md-6">
+                            <p class="product-modal-price" id="modalProductPrice">$0.00</p>
+                            <p id="modalProductDescription">Product description will appear here.</p>
+                            
+                            <div class="size-selector">
+                                <h6>Size</h6>
+                                <div class="size-options">
+                                    <div class="size-option">
+                                        <input type="radio" name="size" id="sizeS" value="S" checked>
+                                        <label for="sizeS">S</label>
+                                    </div>
+                                    <div class="size-option">
+                                        <input type="radio" name="size" id="sizeM" value="M">
+                                        <label for="sizeM">M</label>
+                                    </div>
+                                    <div class="size-option">
+                                        <input type="radio" name="size" id="sizeL" value="L">
+                                        <label for="sizeL">L</label>
+                                    </div>
+                                    <div class="size-option">
+                                        <input type="radio" name="size" id="sizeXL" value="XL">
+                                        <label for="sizeXL">XL</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="color-selector">
+                                <h6>Color</h6>
+                                <div class="color-options">
+                                    <div class="color-option">
+                                        <input type="radio" name="color" id="colorBlack" value="Black" checked>
+                                        <label for="colorBlack" class="color-black">Black</label>
+                                    </div>
+                                    <div class="color-option">
+                                        <input type="radio" name="color" id="colorWhite" value="White">
+                                        <label for="colorWhite" class="color-white">White</label>
+                                    </div>
+                                    <div class="color-option">
+                                        <input type="radio" name="color" id="colorGrey" value="Grey">
+                                        <label for="colorGrey" class="color-grey">Grey</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="btn-add-to-cart" id="addToCartBtn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
